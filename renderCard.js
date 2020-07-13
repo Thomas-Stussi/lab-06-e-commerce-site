@@ -25,6 +25,7 @@ export function renderCard(card) {
     p.appendChild(button);
 
     li.appendChild(p);
+    
 
     return li;
 }

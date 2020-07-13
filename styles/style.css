@@ -19,7 +19,6 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
 }
 
 main {
@@ -62,8 +61,12 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 .gutter-right {
@@ -93,18 +96,28 @@ footer {
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
 
-.product-list {
-    
+.cards {
+    display: flex;
+    border: solid 2px black;
+    background-color: white;
 }
 
-.landing {
+.image-here {
+    background-color: brown;
+}
 
+.landing-body {
+    background-color: brown;
+}
+
+.landing-title {
+    font-size: 3rem;
 }
 
   @keyframes pulse {

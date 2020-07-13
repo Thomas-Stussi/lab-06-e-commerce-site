@@ -11,8 +11,4 @@ for (let i = 0; i < cardList.length; i++) {
     const el = renderCard(card);
     cardDiv.appendChild(el);
     
-    console.log(card);
-    console.log('hello');
-    console.log(cardDiv);
-    console.log(el);
-}                  
+}
