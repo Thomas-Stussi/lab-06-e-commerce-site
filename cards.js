@@ -53,10 +53,10 @@ const forceOfNature = {
     mana: 6
 };
 
-const cardList = [
+export const cardList = [
     shivanDragon,
     moat,
     counterspell,
     darkRitual,
     forceOfNature
-]
+];
