@@ -59,10 +59,14 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    color: chartreuse;
+}
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
+    color: chartreuse;
 }
 
 h3 {
@@ -108,12 +112,26 @@ footer {
     background-color: white;
 }
 
-.image-here {
+.product-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: brown;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
 }
 
 .landing-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: brown;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
 }
 
 .landing-title {
