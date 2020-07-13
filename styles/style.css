@@ -98,7 +98,15 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
+
+.product-list {
+    
+}
+
+.landing {
+
+}
+
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);

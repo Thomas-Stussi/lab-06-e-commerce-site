@@ -20,7 +20,7 @@ export function renderCard(card) {
     p.textContent = usd;
     
     const button = document.createElement('button');
-    button.textContent = 'Add';
+    button.textContent = 'Add';                                        
     button.value = card.id;
     p.appendChild(button);
 
