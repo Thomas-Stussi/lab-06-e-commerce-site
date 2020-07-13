@@ -11,14 +11,14 @@ test('time to test a function', (expect) => {
         id: 'shivan',
         name: 'Shivan Dragon',
         image: 'shivan.jpg',
-        description: `While it's true most Dragons are cruel, the Shivan Dragon seems to take particular glee in the misery of others, often tormenting its victims much like a cat plays with a mouse before delivering the final blow.`,
+        description: 'Flying, R: +1/+0 until end of turn.',
         category: 'Creature',
         price: 6199.99,
         color: 'red',
         mana: 6
     };
 
-    const expected = `<li class="Creature" title="While it's true most Dragons are cruel, the Shivan Dragon seems to take particular glee in the misery of others, often tormenting its victims much like a cat plays with a mouse before delivering the final blow."><h3>Shivan Dragon</h3><img src="../assets/shivan.jpg" alt="Shivan Dragon image"><p class="price">$6199.99<button value="shivan">Add</button></p></li>`;
+    const expected = `<li class="Creature" title="Flying, R: +1/+0 until end of turn."><h3>Shivan Dragon</h3><img src="../assets/shivan.jpg" alt="Shivan Dragon image"><p class="price">$6199.99<button value="shivan">Add</button></p></li>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
