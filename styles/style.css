@@ -19,7 +19,6 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
 }
 
 main {
@@ -60,10 +59,18 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    color: chartreuse;
+}
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
+    color: chartreuse;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 .gutter-right {
@@ -93,12 +100,49 @@ footer {
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
+
+.cards {
+    display: flex;
+    border: solid 2px black;
+    background-color: white;
+}
+
+.product-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+}
+
+.landing-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    background: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+}
+
+.landing-title {
+    font-size: 3rem;
+}
+
+.descriptions {
+    max-width: 50%;
+    font-size: .6rem;
+}
+
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);

@@ -12,6 +12,11 @@ export function renderCard(card) {
     img.alt = card.name + ' image';
     li.appendChild(img);
 
+    //const div = document.createElement('div');
+    //div.className = 'descriptions';
+    //div.textContent = card.description;
+    //li.appendChild(div);
+
     const p = document.createElement('p');
     p.className = 'price';
 
@@ -20,11 +25,12 @@ export function renderCard(card) {
     p.textContent = usd;
     
     const button = document.createElement('button');
-    button.textContent = 'Add';
+    button.textContent = 'Add';                                        
     button.value = card.id;
     p.appendChild(button);
 
     li.appendChild(p);
+    
 
     return li;
 }

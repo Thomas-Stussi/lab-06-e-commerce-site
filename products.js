@@ -10,4 +10,5 @@ for (let i = 0; i < cardList.length; i++) {
     const card = cardList[i];
     const el = renderCard(card);
     cardDiv.appendChild(el);
+    
 }
