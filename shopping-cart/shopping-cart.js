@@ -24,5 +24,5 @@ for (let i = 0; i < cart.length; i++) {
 
 //then make the order total row
 const orderTotal = calcOrderTotal(cart, cardList);
-totalCell.textcontent = orderTotal;
-console.log(orderTotal);
+totalCell.append(orderTotal);
+//console.log(totalCell, orderTotal);
