@@ -21,6 +21,12 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+.cart-table {
+    position: absolute;
+    top: 25%;
+}
+
+
 .head-test {
     top: 0;
     position: fixed;
@@ -150,6 +156,7 @@ footer {
     max-width: 50%;
     font-size: .6rem;
 }
+
 
   @keyframes pulse {
     20% {
