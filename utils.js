@@ -8,3 +8,7 @@ export function findById(someArray, someId) {
     return item;
 }
 
+export function calcLineItem(quantity, price) {
+    const lineTotal = quantity * price;
+    return Math.round(lineTotal * 100) / 100;
+}
