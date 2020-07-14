@@ -12,13 +12,13 @@ export function renderLineItem(cartItem, card) {
 
     //create price cell
     const priceTd = document.createElement('td');
-    priceTd.textContent = '$' + card.price;
+    priceTd.textContent = '$' + card.price.toFixed(2);
 
     //create line total cell
     const lineTd = document.createElement('td');
     const lineTotal = card.price * cartItem.quantity;
     const roundTotal = (lineTotal * 100) / 100;
-    lineTd.textContent = '$' + roundTotal;
+    lineTd.textContent = '$' + roundTotal.toFixed(2);
 
     tr.appendChild(nameTd);
     tr.appendChild(quantityTd);
