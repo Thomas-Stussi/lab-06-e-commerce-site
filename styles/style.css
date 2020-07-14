@@ -21,6 +21,13 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+.head-test {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -47,7 +54,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: white;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
