@@ -12,6 +12,11 @@ export function renderCard(card) {
     img.alt = card.name + ' image';
     li.appendChild(img);
 
+    //const div = document.createElement('div');
+    //div.className = 'descriptions';
+    //div.textContent = card.description;
+    //li.appendChild(div);
+
     const p = document.createElement('p');
     p.className = 'price';
 

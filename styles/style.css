@@ -138,6 +138,11 @@ footer {
     font-size: 3rem;
 }
 
+.descriptions {
+    max-width: 50%;
+    font-size: .6rem;
+}
+
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
