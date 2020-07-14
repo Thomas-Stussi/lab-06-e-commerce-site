@@ -1,5 +1,6 @@
-import { findById, calcLineItem } from '../utils.js';
+import { findById, calcLineItem, calcOrderTotal } from '../utils.js';
 import { cardList } from '../cards.js';
+import { cart } from '../shopping-cart/cart.js';
 
 const test = QUnit.test;
 
@@ -28,4 +29,15 @@ test('calculate line total', (assert) => {
 
     // assert
     assert.equal(total, expected);
+});
+
+test('calculate the order total', (assert) => {
+    //arrange
+    const expected = '$9301.59';
+
+    //act
+    const orderTotal = calcOrderTotal(cart, cardList);
+
+    //assert
+    assert.equal(orderTotal, expected);
 });

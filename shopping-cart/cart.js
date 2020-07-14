@@ -1,4 +1,4 @@
-const cart = [{
+export const cart = [{
     id: 'moat',
     quantity: 2
 }, {
