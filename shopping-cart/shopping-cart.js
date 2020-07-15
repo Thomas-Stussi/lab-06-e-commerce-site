@@ -1,12 +1,15 @@
 //import stuff!
-import { findById, calcOrderTotal } from '../utils.js';
-import { cart } from './cart.js';
+import { findById, calcOrderTotal, getCart } from '../common/utils.js';
+//import { cart } from './cart.js';
 import { cardList } from '../cards.js';
 import { renderLineItem } from './render-line-items.js';
+
 
 //dom elements
 const tbody = document.getElementById('tbody');
 const totalCell = document.getElementById('total');
+const cart = getCart();
+//console.log(cart);
 
 //loop through the cart
 for (let i = 0; i < cart.length; i++) {

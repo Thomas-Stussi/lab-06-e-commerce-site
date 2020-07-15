@@ -1,5 +1,5 @@
 export function findById(someArray, someId) {
-    let item = {};
+    let item = null;
     for (let i = 0; i < someArray.length; i++) {
         if (someArray[i].id === someId) {
             item = someArray[i];
@@ -26,4 +26,11 @@ export function calcOrderTotal(cart, cards) {
         orderTotal += lineTotal;
     }
     return `$${orderTotal}`;
+}
+
+export function getCart() {
+    const stringyCart = localStorage.getItem('CART');
+    const cart = JSON.parse(stringyCart) || [];
+
+    return cart;
 }
