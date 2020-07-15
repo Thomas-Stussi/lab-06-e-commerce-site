@@ -34,3 +34,16 @@ export function getCart() {
 
     return cart;
 }
+
+export function calcTotalItems(cart) {
+    //initialize
+    let totalItems = 0;
+    //loop through line items
+    for (let i = 0; i < cart.length; i++) {
+        //get line item
+        const line = cart[i];
+        //calculate total number of items
+        totalItems += line.quantity;
+    }
+    return totalItems;
+}
