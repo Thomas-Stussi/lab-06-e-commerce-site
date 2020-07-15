@@ -22,18 +22,44 @@ body {
 }
 
 .card-collector {
-    float: right;
+    display: flex;
+    position: absolute;
+    right: 0;
 }
 
 .nav {
-    float: left;
+    display: flex;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
 }
 
-.cart-table {
+table {
+    width: 75%;
     position: absolute;
-    top: 25%;
+    top: 35%;
     border: black solid 1px;
-    background-color: white;
+    background-color: rgb(148, 141, 141);
+    color: darkblue;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(134, 148, 53);
+}
+
+th {
+    height: 30px;
+    font-size: 1.25rem;
+    text-align: left;
+    background-color: rgb(134, 148, 53);
+}
+
+td {
+    padding: 10px;
+    border: black 1px solid;
+}
+td:nth-child(5) {
+    background-color: black;
 }
 
 .cart-body{
@@ -48,9 +74,9 @@ body {
     position: fixed;
     width: 100%;
     height: 50px;
-    color: chartreuse;
-    background-color: chocolate;
-    font-size: 2rem;
+    color: rgb(134, 148, 53);
+    background-color: rgb(255, 152, 78);
+    text-align: center;
 }
 
 
@@ -77,13 +103,7 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: white;
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
+
 
 footer {
     display: flex;
@@ -93,15 +113,13 @@ footer {
 }
 
 h1 {
-    color: chartreuse;
+    color: rgb(134, 148, 53);
 }
 
 h2 {
-
     font-size: 2rem;
     font-weight: bold;
-    color: chartreuse;
-
+    color: rgb(134, 148, 53);
 }
 
 h3 {
@@ -119,8 +137,6 @@ h3 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
