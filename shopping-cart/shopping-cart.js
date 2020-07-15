@@ -8,6 +8,7 @@ import { renderLineItem } from './render-line-items.js';
 //dom elements
 const tbody = document.getElementById('tbody');
 const totalCell = document.getElementById('total');
+//parsed cart using getCart function
 const cart = getCart();
 //console.log(cart);
 

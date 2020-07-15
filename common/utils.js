@@ -25,7 +25,7 @@ export function calcOrderTotal(cart, cards) {
         const lineTotal = calcLineItem(line.quantity, card.price);
         orderTotal += lineTotal;
     }
-    return `$${orderTotal}`;
+    return '$' + Math.round(orderTotal * 100) / 100;
 }
 
 export function getCart() {
