@@ -11,7 +11,7 @@ export function renderCard(card) {
     li.appendChild(h3);
 
     const img = document.createElement('img');
-    img.src = '../assets/' + card.image;
+    img.src = card.image;
     img.alt = card.name + ' image';
     li.appendChild(img);
 

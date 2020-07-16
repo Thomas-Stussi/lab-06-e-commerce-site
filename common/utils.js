@@ -1,3 +1,5 @@
+import { cardList } from '../cards.js';
+
 export function findById(someArray, someId) {
     let item = null;
     for (let i = 0; i < someArray.length; i++) {
@@ -38,4 +40,17 @@ export function calcTotalItems(cart) {
         totalItems += line.quantity;
     }
     return totalItems;
+}
+
+export function getCards() {
+    //get the catalog from local storage
+    let cards = JSON.parse(localStorage.getItem('CARDS'));
+    //if there isn't anything there, initialize it
+    if (!cards) {
+        //create a starter product list
+        localStorage.setItem('CARDS', JSON.stringify(cardList));
+        //set cards to the starter products in local storage
+        cards = JSON.parse('CARDS');
+    }
+    return cards;
 }
