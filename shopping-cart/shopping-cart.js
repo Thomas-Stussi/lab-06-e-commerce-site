@@ -9,6 +9,7 @@ import { renderLineItem } from './render-line-items.js';
 const tbody = document.getElementById('tbody');
 const totalCell = document.getElementById('total');
 const totalItemsCell = document.getElementById('items');
+const orderButton = document.getElementById('order-button');
 //parsed cart using getCart function
 const cart = getCart();
 //console.log(cart);
@@ -34,3 +35,20 @@ totalCell.append(orderTotal);
 //calc total items
 const totalItems = calcTotalItems(cart);
 totalItemsCell.append(totalItems);
+
+//make the order button clear everything 
+//if cart is empty disable it
+if (cart.length === 0) {
+    orderButton.disabled = true;
+} //else if something else in cart
+else {
+    //add event listener
+    orderButton.addEventListener('click', () => {
+        //clear local storage
+        localStorage.removeItem('CART');
+        //this step isn't clear but it alerts the user that the order has been placed
+        alert('Order placed:\n' + JSON.stringify(cart, true, 2));
+        //redirect to shop
+        window.location = '../index.html';
+    });
+}
