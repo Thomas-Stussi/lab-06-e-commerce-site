@@ -1,8 +1,9 @@
 //import stuff!
-import { findById, calcOrderTotal, getCart, calcTotalItems } from '../common/utils.js';
+import { findById, calcOrderTotal, calcTotalItems } from '../common/utils.js';
 //import { cart } from './cart.js';
-import { cardList } from '../cards.js';
+import { cardList } from '../products/cards.js';
 import { renderLineItem } from './render-line-items.js';
+import { getCart } from './cart-api.js';
 
 
 //dom elements
@@ -25,7 +26,6 @@ for (let i = 0; i < cart.length; i++) {
     //console.log(dom);
     //append the dom tree with the new row
     tbody.append(dom);
-
 }
 //then make the order total row
 const orderTotal = calcOrderTotal(cart, cardList);
