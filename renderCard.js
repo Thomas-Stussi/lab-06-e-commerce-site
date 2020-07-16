@@ -25,6 +25,21 @@ export function renderCard(card) {
     const usd = '$' + card.price.toFixed(2);
     
     p.textContent = usd;
+
+    //construct dropdown menu
+    const dropDown = document.createElement('select');
+    li.appendChild(dropDown);
+    //set options for dropdown
+    const options = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //loop through the options and append them to the select
+    for (let i = 0; i < options.length; i++) {
+        const opt = options[i];
+        const el = document.createElement('option');
+        el.textContent = opt;
+        el.value = opt;
+        dropDown.appendChild(el);
+    }
+
     
     const button = document.createElement('button');
     button.textContent = 'Buy Now!';                                        
