@@ -1,4 +1,5 @@
-import { getCart, findById } from './common/utils.js'
+import { findById } from './common/utils.js';
+import { getCart } from './shopping-cart/cart-api.js';
 
 export function renderCard(card) {
     const li = document.createElement('li');
@@ -13,11 +14,6 @@ export function renderCard(card) {
     img.src = '../assets/' + card.image;
     img.alt = card.name + ' image';
     li.appendChild(img);
-
-    //const div = document.createElement('div');
-    //div.className = 'descriptions';
-    //div.textContent = card.description;
-    //li.appendChild(div);
 
     const p = document.createElement('p');
     p.className = 'price';
@@ -39,7 +35,6 @@ export function renderCard(card) {
         el.value = opt;
         dropDown.appendChild(el);
     }
-
     const button = document.createElement('button');
     button.textContent = 'Buy Now!';                                        
     button.value = card.id;

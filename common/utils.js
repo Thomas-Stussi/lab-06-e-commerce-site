@@ -27,14 +27,6 @@ export function calcOrderTotal(cart, cards) {
     }
     return '$' + Math.round(orderTotal * 100) / 100;
 }
-
-export function getCart() {
-    const stringyCart = localStorage.getItem('CART');
-    const cart = JSON.parse(stringyCart) || [];
-
-    return cart;
-}
-
 export function calcTotalItems(cart) {
     //initialize
     let totalItems = 0;
