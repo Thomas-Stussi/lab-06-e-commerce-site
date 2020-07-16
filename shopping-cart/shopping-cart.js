@@ -1,7 +1,7 @@
 //import stuff!
 import { findById, calcOrderTotal, calcTotalItems } from '../common/utils.js';
 //import { cart } from './cart.js';
-import { cardList } from '../cards.js';
+import { cardList } from '../products/cards.js';
 import { renderLineItem } from './render-line-items.js';
 import { getCart } from './cart-api.js';
 

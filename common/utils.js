@@ -1,4 +1,4 @@
-import { cardList } from '../cards.js';
+import { cardList } from '../products/cards.js';
 
 export function findById(someArray, someId) {
     let item = null;

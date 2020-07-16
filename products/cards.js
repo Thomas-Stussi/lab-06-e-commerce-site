@@ -2,7 +2,7 @@
 const shivanDragon = {
     id: 'shivan',
     name: 'Shivan Dragon',
-    image: './assets/shivan.jpg',
+    image: '../assets/shivan.jpg',
     description: 'Flying, R: +1/+0 until end of turn.',
     category: 'Creature',
     price: 6199.99,
@@ -12,7 +12,7 @@ const shivanDragon = {
 const moat = {
     id: 'moat',
     name: 'Moat',
-    image: './assets/moat.jpg',
+    image: '../assets/moat.jpg',
     description: 'Non-flying creatures cannot attack.', 
     category: 'Enchantment',
     price: 459.90,
@@ -23,7 +23,7 @@ const moat = {
 const counterspell = {
     id: 'counter',
     name: 'Counterspell',
-    image: './assets/counterspell.jpg',
+    image: '../assets/counterspell.jpg',
     description: 'Counters target spell as it is being cast.',
     category: 'Creature',
     price: 399.95,
@@ -34,7 +34,7 @@ const counterspell = {
 const darkRitual = {
     id: 'dark',
     name: 'Dark Ritual',
-    image: './assets/darkRitual.jpg',
+    image: '../assets/darkRitual.jpg',
     description: 'Add 3 black mana to your mana pool.',
     category: 'Interrupt',
     price: 94.00,
@@ -45,7 +45,7 @@ const darkRitual = {
 const forceOfNature = {
     id: 'force',
     name: 'Force of Nature',
-    image: './assets/forceOfNature.jpg',
+    image: '../assets/forceOfNature.jpg',
     description: 'Trample You must pay GGGG during upkeep or Force of Nature does 8 damage to you. You may still attack with Force of Nature even if you failed to pay the upkeep.',
     category: 'Creature',
     price: 300.00,

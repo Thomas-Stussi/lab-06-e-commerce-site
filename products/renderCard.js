@@ -1,5 +1,5 @@
-import { findById } from './common/utils.js';
-import { getCart } from './shopping-cart/cart-api.js';
+import { findById } from '../common/utils.js';
+import { getCart } from '../shopping-cart/cart-api.js';
 
 export function renderCard(card) {
     const li = document.createElement('li');

@@ -8,7 +8,7 @@ const cardForm = document.getElementById('form');
 //add event listener to the form
 cardForm.addEventListener('submit', e => {
     //prevent default behavior
-    e.preventDefault;
+    e.preventDefault();
 
     const newCardData = new FormData(cardForm);
 
@@ -28,5 +28,5 @@ cardForm.addEventListener('submit', e => {
     //set the string to local storage
     localStorage.setItem('CARDS', stringyCards);
     //nav to the product page
-    window.location.replace('../index.html');
+    window.location = '../products/index.html';
 });
