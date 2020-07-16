@@ -40,7 +40,6 @@ export function renderCard(card) {
         dropDown.appendChild(el);
     }
 
-    
     const button = document.createElement('button');
     button.textContent = 'Buy Now!';                                        
     button.value = card.id;
@@ -58,15 +57,15 @@ export function renderCard(card) {
             const newCartItem = {
                 //add the data
                 id: card.id,
-                quantity: 1
+                quantity: dropDown.value
             };
             //add new cart item into the cart
             cart.push(newCartItem);
         }
         //otherwise...
         else {
-            //increment the item
-            cartItem.quantity++;
+            //add dropdown.value to the quantity
+            cartItem.quantity = Number(cartItem.quantity) + Number(dropDown.value);
         }
         //stringify the cart again
         const stringyCart = JSON.stringify(cart);
