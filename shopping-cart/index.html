@@ -14,7 +14,6 @@
 
 <body class="cart-body">
     <header class="head-test">
-        
         <nav class="nav">
             <a href="../landing.html">Landing</a>
             <a href="../index.html">Shop</a>
@@ -33,21 +32,18 @@
                     <th>Sub Total</th>
                 </tr>
             </thead>
-
             <tbody id='tbody'>
-
             </tbody>
-
             <tfoot>
-                <th></th>
-                <th></th>
+                <th>Total Cards in Cart</th>
+                <th id='items'></th>
                 <th>Order Total:</th>
                 <th id="total"></th>
-                <th><button>Place Order!</button></th>
             </tfoot>
-
         </table>
-
+        <div class="buy-button-div"><tr>
+            <button type="button" class="buy-button" id='order-button'>Place Order!</button>
+        </div>
     </main>
 
     <script type='module' src="shopping-cart.js"></script>

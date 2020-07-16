@@ -5,7 +5,7 @@ import { renderCard } from '../renderCard.js';
 const test = QUnit.test;
 
 
-test('time to test a function', (expect) => {
+test('render card test', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const shivanDragon = {
