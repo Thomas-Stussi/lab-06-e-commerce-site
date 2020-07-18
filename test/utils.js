@@ -1,4 +1,4 @@
-import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
+/*import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
 import { cardList } from '../cards.js';
 import { cart } from '../shopping-cart/cart.js';
 
@@ -40,4 +40,4 @@ test('calculate the order total', (assert) => {
 
     //assert
     assert.equal(orderTotal, expected);
-});
+});*/
