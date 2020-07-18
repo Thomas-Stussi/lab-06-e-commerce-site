@@ -1,4 +1,4 @@
-import { renderLineItem } from '../shopping-cart/render-line-items.js';
+/*import { renderLineItem } from '../shopping-cart/render-line-items.js';
 
 const test = QUnit.test;
 
@@ -28,4 +28,4 @@ test('renders a line item', assert => {
     
     // assert
     assert.equal(html, expected);
-});
+});*/
